@@ -1,3 +1,5 @@
+import frappe
+
 def get_task_permission_query_conditions(user):
     if not user:
         user = frappe.session.user
@@ -6,7 +8,7 @@ def get_task_permission_query_conditions(user):
     if "Task Completer" in frappe.get_roles(user):
         # Restrict to tasks assigned to the user
         return f"""`tabTask`.name IN (
-            SELECT `parent`
+            SELECT `reference_name`
             FROM `tabToDo`
             WHERE `tabToDo`.reference_type = 'Task' AND `tabToDo`.allocated_to = '{user}'
         )"""
