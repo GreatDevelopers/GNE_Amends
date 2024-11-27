@@ -11,7 +11,15 @@ permission_query_conditions = {
     "Task": "gne_amends.custom_gne.get_task_permission_query_conditions.get_task_permission_query_conditions",
 }
 
+# Validation for operation on form.
 
+doc_events = {
+    "Task": {
+        "validate": "gne_amends.custom_gne.validate_task_access.validate_task_access",
+        "before_save": "gne_amends.custom_gne.validate_task_access.validate_task_access",
+        "before_delete": "gne_amends.custom_gne.validate_task_access.validate_task_access",
+    }
+}
 
 # Apps
 # ------------------
