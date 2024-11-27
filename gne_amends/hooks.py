@@ -5,6 +5,14 @@ app_description = "Customisation for GNDEC Ludhiana"
 app_email = "hardeep.rai@gmail.com"
 app_license = "mit"
 
+# Permisison control
+
+permission_query_conditions = {
+    "Task": "gne_amends.custom_gne.get_task_permission_query_conditions.get_task_permission_query_conditions",
+}
+
+
+
 # Apps
 # ------------------
 
