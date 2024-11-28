@@ -21,6 +21,12 @@ doc_events = {
     }
 }
 
+# Linking client script for the Task docType
+
+doctype_js = {
+    "Task": "custom_gne/client_scripts/task.js"
+}
+
 # Apps
 # ------------------
 
