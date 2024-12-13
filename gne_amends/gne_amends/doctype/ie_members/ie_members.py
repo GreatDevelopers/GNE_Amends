@@ -5,5 +5,5 @@
 from frappe.website.website_generator import WebsiteGenerator
 
 
-class IEMembers(Document):
+class IEMembers(WebsiteGenerator):
 	pass
