@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:member_code",
+ "creation": "2024-12-13 17:29:17.939344",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "member_code",
+  "division",
+  "centre_name",
+  "column_break_iube",
+  "email",
+  "mobile",
+  "route",
+  "column_break_ercc",
+  "add1",
+  "add2",
+  "add3",
+  "add4",
+  "add5",
+  "pin",
+  "on_web"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "member_code",
+   "fieldtype": "Data",
+   "label": "Member Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division"
+  },
+  {
+   "fieldname": "centre_name",
+   "fieldtype": "Data",
+   "label": "Centre Name"
+  },
+  {
+   "fieldname": "column_break_iube",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Phone",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "column_break_ercc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "add1",
+   "fieldtype": "Data",
+   "label": "Add1"
+  },
+  {
+   "fieldname": "add2",
+   "fieldtype": "Data",
+   "label": "Add2"
+  },
+  {
+   "fieldname": "add3",
+   "fieldtype": "Data",
+   "label": "Add3"
+  },
+  {
+   "fieldname": "add4",
+   "fieldtype": "Data",
+   "label": "Add4"
+  },
+  {
+   "fieldname": "add5",
+   "fieldtype": "Data",
+   "label": "Add5"
+  },
+  {
+   "fieldname": "pin",
+   "fieldtype": "Data",
+   "label": "PIN"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "default": "0",
+   "fieldname": "on_web",
+   "fieldtype": "Check",
+   "label": "On Web",
+   "options": "1"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "on_web",
+ "links": [],
+ "modified": "2024-12-13 19:15:46.239581",
+ "modified_by": "Administrator",
+ "module": "GNE Amends",
+ "name": "IE Members",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "route",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "member_code"
+}
