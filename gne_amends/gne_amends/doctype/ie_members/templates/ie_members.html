@@ -1,7 +1,22 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
-{% endblock %}
+<h4>Member Code: {{ title }}</h4>
 
+{% if division %}
+<div>Division: {{ division }}</div>
+{% endif %}
+
+<h2>{{ full_name }}</h2>
+
+<pre>
+{% if add1 %}{{ add1 }}{% endif %}
+{% if add2 %}{{ add2 }}{% endif %}
+{% if add3 %}{{ add3 }}{% endif %}
+{% if add4 %}{{ add4 }}{% endif %}
+{% if add5 %}{{ add5 }}{% endif %}
+{% if pin %}{{ pin }}{% endif %}
+</pre>
+
+{% endblock %}
 <!-- this is a sample default web page template -->
