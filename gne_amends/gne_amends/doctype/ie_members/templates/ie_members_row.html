@@ -1,18 +1,26 @@
 <div class="container">
     <div class="row mb-3">
+        <!-- Photo Column -->
         <div class="col-md-2">
             {% if doc.photo %}
-                <img src="{{ doc.photo }}" alt="Photo of {{ doc.full_name }}" class="img-fluid" style="height: 100px; object-fit: cover;">
+                <a href="{{ doc.route }}">
+                    <img src="{{ doc.photo }}" alt="Photo of {{ doc.full_name }}" class="img-fluid" style="height: 100px; object-fit: cover;">
+                </a>
             {% else %}
-                <img src="/files/XPerson.jpg" alt="Default Photo" class="img-fluid" style="height: 100px; object-fit: cover;">
+                <a href="{{ doc.route }}">
+                    <img src="/files/XPerson.jpg" alt="Default Photo" class="img-fluid" style="height: 100px; object-fit: cover;">
+                </a>
             {% endif %}
         </div>
+        <!-- Name Column -->
         <div class="col-md-3 text-end">
             <a href="{{ doc.route }}">{{ doc.full_name }}</a>
         </div>
+        <!-- Division Column -->
         <div class="col-md-2">
             {{ doc.division }} Division
         </div>
+        <!-- Member Code Column -->
         <div class="col-md-3">
             Member Code: {{ doc.member_code }}
         </div>
