@@ -1,22 +1,36 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
+<a href=../ie_members>Back to member list</a>
+
+<hr/>
+
 <h4>Member Code: {{ title }}</h4>
+
+
+<div class="col-md-2">
+   {% if doc.photo %}
+      <img src="{{ doc.photo }}" alt="Photo of {{ doc.full_name }}" class="img-fluid" style="height: 200px; object-fit: cover;">
+   {% else %}
+      <img src="/files/XPerson.jpg" alt="Default Photo" class="img-fluid" style="height: 200px; object-fit: cover;">
+   {% endif %}
+</div>
+
+<h2>{{ full_name }}</h2>
 
 {% if division %}
 <div>Division: {{ division }}</div>
 {% endif %}
 
-<h2>{{ full_name }}</h2>
-
-<pre>
 {% if add1 %}{{ add1 }}{% endif %}
 {% if add2 %}{{ add2 }}{% endif %}
 {% if add3 %}{{ add3 }}{% endif %}
 {% if add4 %}{{ add4 }}{% endif %}
 {% if add5 %}{{ add5 }}{% endif %}
 {% if pin %}{{ pin }}{% endif %}
-</pre>
 
+<hr/>
+
+<a href=../ie_members>Back to member list</a>
 {% endblock %}
 <!-- this is a sample default web page template -->

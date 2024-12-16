@@ -16,6 +16,7 @@
   "email",
   "mobile",
   "route",
+  "photo",
   "column_break_ercc",
   "add1",
   "add2",
@@ -101,18 +102,23 @@
    "label": "route"
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "on_web",
    "fieldtype": "Check",
-   "label": "On Web",
-   "options": "1"
+   "label": "On Web"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
   }
  ],
  "has_web_view": 1,
+ "image_field": "photo",
  "index_web_pages_for_search": 1,
  "is_published_field": "on_web",
  "links": [],
- "modified": "2024-12-13 19:15:46.239581",
+ "modified": "2024-12-16 11:05:47.839245",
  "modified_by": "Administrator",
  "module": "GNE Amends",
  "name": "IE Members",
@@ -132,7 +138,7 @@
    "write": 1
   }
  ],
- "route": "route",
+ "route": "ie_members",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

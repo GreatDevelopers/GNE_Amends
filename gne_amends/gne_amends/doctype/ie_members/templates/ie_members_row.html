@@ -1,4 +1,20 @@
-<div>
-	<pre>Division: {{ doc.division }} | Member Code: {{ doc.member_code }} | <a href="{{ doc.route }}">{{ doc.full_name }}</a></pre>
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-md-2">
+            {% if doc.photo %}
+                <img src="{{ doc.photo }}" alt="Photo of {{ doc.full_name }}" class="img-fluid" style="height: 100px; object-fit: cover;">
+            {% else %}
+                <img src="/files/XPerson.jpg" alt="Default Photo" class="img-fluid" style="height: 100px; object-fit: cover;">
+            {% endif %}
+        </div>
+        <div class="col-md-3 text-end">
+            <a href="{{ doc.route }}">{{ doc.full_name }}</a>
+        </div>
+        <div class="col-md-2">
+            {{ doc.division }} Division
+        </div>
+        <div class="col-md-3">
+            Member Code: {{ doc.member_code }}
+        </div>
+    </div>
 </div>
-<!-- this is a sample default list template -->
